@@ -1,5 +1,5 @@
 # Assign a class named Fan
-class Fan:
+class Fan(ac):
     ## construct for creating fan with the specified speed, radius, color and on/off
     def __init__(self, speed, radius, color, on_off):
     ## three constants named SLOW, MEDIUM AND FAST
@@ -14,7 +14,8 @@ class Fan:
         self.__radius = radius
 ## private string to identify fan color
         self.__color = color
-## Accessor and Mutator method for all four data fields
+fan = Fan(speed = 3, radius = 10, color = "yellow", on_off = "on")
 ### Test two fan objects
+print(f"speed: {str(fan.get_speed())}")
 #### maximum speed, radius 10, color yellow and turn on
 #### Medium speed, radius 5, rolor blue and turned off
