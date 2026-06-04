@@ -7,13 +7,13 @@ class Fan:
         MEDIUM = 2
         FAST = 3
 ## private int named speed for the speed of the fan
-        __speed = speed
+        self.__speed = speed
 ## private bool to know if the fan is on or off
-        __on_status = on_off
+        self.__on_status = on_off
 ## private float to identify fan radius
-        __radius = radius
+        self.__radius = radius
 ## private string to identify fan color
-        __color = color
+        self.__color = color
 ## Accessor and Mutator method for all four data fields
 ### Test two fan objects
 #### maximum speed, radius 10, color yellow and turn on
