@@ -41,13 +41,13 @@ class Fan:
     def set_speed(self, speed):
         self.__speed = speed
     
-    def set_speed(self, radius):
+    def set_radius(self, radius):
         self.__radius = radius
 
-    def set_speed(self, color):
+    def set_color(self, color):
         self.__color = color
 
-    def set_speed(self, on_off):
+    def set_on_status(self, on_off):
         self.__on_status = on_off
     
 if __name__ == "__main__":
@@ -62,5 +62,14 @@ if __name__ == "__main__":
 
     ### Test two fan objects
     #### maximum speed, radius 10, color yellow and turn on
-    
+    fan.set_speed(3)
+    fan.set_radius(10)
+    fan.set_color("yellow")
+    fan.set_on_status("on")
+
+    print(f"\nModified fan #1: ")
+    print(f"Speed: {fan.get_speed()}")
+    print(f"Radius: {fan.get_radius()}")
+    print(f"Color: {fan.get_color()}")
+    print(f"On/Off: {fan.get_on_status()}")
     #### Medium speed, radius 5, rolor blue and turned off
