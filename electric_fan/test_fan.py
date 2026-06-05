@@ -52,6 +52,14 @@ class Fan:
     
 if __name__ == "__main__":
     fan = Fan(1, 5, "blue", "on")
+
+    # printing default fan object
+    print(f"Default fan: ")
+    print(f"Speed: {fan.get_speed()}")
+    print(f"Radius: {fan.get_radius()}")
+    print(f"Color: {fan.get_color()}")
+    print(f"On/Off: {fan.get_on_status()}")
+
     ### Test two fan objects
     #### maximum speed, radius 10, color yellow and turn on
     
