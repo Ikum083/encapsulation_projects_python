@@ -6,8 +6,17 @@ class Fan:
         SLOW = 1
         MEDIUM = 2
         FAST = 3
+        self.fan_speed = ""
 ## private int named speed for the speed of the fan
         self.__speed = speed
+        if self.__speed == SLOW:
+            self.fan_speed = "slow"
+        elif self.__speed == MEDIUM:
+            self.fan_speed = "medium"
+        elif self.__speed == FAST:
+            self.fan_speed = "fast"
+        else:
+            self.fan_speed = "unavailable fan speed"
 ## private bool to know if the fan is on or off
         self.__on_status = on_off
 ## private float to identify fan radius
@@ -41,7 +50,9 @@ class Fan:
     def set_speed(self, on_off):
         self.__on_status = on_off
     
-fan = Fan(speed = 3, radius = 10, color = "yellow", on_off = "on")
-### Test two fan objects
-#### maximum speed, radius 10, color yellow and turn on
-#### Medium speed, radius 5, rolor blue and turned off
+if __name__ == "__main__":
+    fan = Fan(1, 5, "blue", "on")
+    ### Test two fan objects
+    #### maximum speed, radius 10, color yellow and turn on
+    
+    #### Medium speed, radius 5, rolor blue and turned off
