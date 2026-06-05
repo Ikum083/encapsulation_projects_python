@@ -72,4 +72,15 @@ if __name__ == "__main__":
     print(f"Radius: {fan.get_radius()}")
     print(f"Color: {fan.get_color()}")
     print(f"On/Off: {fan.get_on_status()}")
-    #### Medium speed, radius 5, rolor blue and turned off
+
+    #### Medium speed, radius 5, color blue and turned off
+    fan.set_speed(2)
+    fan.set_radius(5)
+    fan.set_color("blue")
+    fan.set_on_status("off")
+
+    print(f"\nModified fan #2: ")
+    print(f"Speed: {fan.get_speed()}")
+    print(f"Radius: {fan.get_radius()}")
+    print(f"Color: {fan.get_color()}")
+    print(f"On/Off: {fan.get_on_status()}")
