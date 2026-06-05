@@ -17,4 +17,21 @@ class Car:
 ## get_speed method to return speed
     def get_speed(self):
         return self.__speed
+    
 ### Car object : Accelerate 5 times and brake 5 times
+if __name__ == "__main__":
+    car = Car(2023, "Honda")
+
+    print(f"Car speed: {car.get_speed()}")
+
+    print("")
+
+    for i in range(5):
+        car.accelerate()
+        print(f"Car speed: {car.get_speed()}")
+
+    print("")
+
+    for j in range(5):
+        car.brake()
+        print(f"Car speed: {car.get_speed()}")
