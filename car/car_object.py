@@ -5,7 +5,16 @@ class Car:
         self.__year_model = year
         self.__make = make
         self.__speed = 0
+
 ## accelerate method to add 5 to speed
+    def accelerate(self):
+        self.__speed += 5
+
 ## brake method to subtract 5 to speed
+    def brake(self):
+        self.__speed -= 5
+
 ## get_speed method to return speed
+    def get_speed(self):
+        return self.__speed
 ### Car object : Accelerate 5 times and brake 5 times
