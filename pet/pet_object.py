@@ -4,7 +4,7 @@ class Pet:
     def __init__(self, name, animal_type, age):
         self.__name = name
         self.__animal_type = animal_type
-        self.__age == age
+        self.__age = age
     
 ## set name, animal type and age
     def set_name(self, name):
@@ -27,3 +27,19 @@ class Pet:
         return self.__animal_type
     
 ### prompt user to input their pet's attributes
+if __name__ == "__main__":
+    pet = Pet("Buddy", "Dog", 10)
+
+    name = input("Enter your pet's name: ")
+    animal_type = input("What animal is your pet?: ")
+    age = int(input("Enter your pet's age: "))
+
+    pet.set_name(name)
+    pet.set_animal_type(animal_type)
+    pet.set_age(age)
+
+    print("")
+
+    print(f"Pet name: {pet.get_name()}")
+    print(f"Pet animal type: {pet.get_animal_type()}")
+    print(f"Pet age: {pet.get_age()}")
